@@ -1,7 +1,5 @@
 from django.db import models
 
-# CREATE GIT BEFORE GOING FORWARD
-
 # Create your models here.
 class Blog(models.Model):
     title = models.CharField(max_length=100)

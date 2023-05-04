@@ -1,0 +1,9 @@
+{% if all_blogs %}
+    <ul>
+    {% for blog in all_blogs %}
+        <li><a href="{% url 'blogs:detail' blog.id %}">{{ blog.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No blogs are available.</p>
+{% endif %}
