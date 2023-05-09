@@ -1,0 +1,8 @@
+<form action="{% url 'blogs:detail' blog.id %}" method="post">
+{% csrf_token %}
+<fieldset>
+    <input type="text" name="blog_title" value="{{ blog.title }}">
+    <input type="text" name="blog_body" value="{{ blog.body }}">
+</fieldset>
+<input type="submit" value="Submit">
+</form>

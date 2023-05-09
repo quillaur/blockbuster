@@ -1,2 +1,6 @@
 <h1>{{ blog.title }}</h1>
 <p>{{ blog.body }}</p>
+
+<button class="btn btn-info">
+    <a class="btn btn-default" href="{% url 'blogs:blog_update' blog.id %}">Update</a>
+</button>
